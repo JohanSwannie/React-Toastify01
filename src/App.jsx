@@ -23,11 +23,13 @@ function App() {
         break;
       case number > 20:
         toast.success(
-          `You are doing excellent now - The number is now ${number}`
+          `Congratulations! - You are now in the TOP NUMBERS! - The number is now ${number}`
         );
         break;
       default:
-        toast.success("All is good Superman!");
+        toast.success(
+          `You are above average now - The number is now ${number}`
+        );
         break;
     }
   };
@@ -38,21 +40,27 @@ function App() {
 
   return (
     <div>
-      <ToastContainer position="bottom-right" />
+      <ToastContainer position="bottom-right" className="testContainer" />
       <div className="middle">
         <button
           className="b1"
           onClick={() => setNumber((prevNumber) => prevNumber + 1)}
         >
-          Add to Number
+          Add 1 to Number
         </button>
-        <button className="b2" onClick={notify}>
+        <button
+          className="b2"
+          onClick={() => setNumber((prevNumber) => prevNumber - 1)}
+        >
+          Subtract 1 from Number
+        </button>
+        <button className="b3" onClick={notify}>
           Test Number
         </button>
-        <button className="b3" onClick={resetNumber}>
+        <button className="b4" onClick={resetNumber}>
           Reset the Number
         </button>
-        <button className="b4">{number}</button>
+        <button className="b5">{number}</button>
       </div>
     </div>
   );
