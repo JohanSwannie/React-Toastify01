@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div>
-      <ToastContainer />
+      <ToastContainer position="bottom-right" />
       <div className="middle">
         <button
           className="b1"
