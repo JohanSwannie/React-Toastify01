@@ -8,17 +8,17 @@ function App() {
 
   const notify = () => {
     switch (true) {
-      case number < 6:
+      case number < 5:
         toast.error(
           `You are running at low figures - The number is now ${number}`
         );
         break;
-      case number < 11:
+      case number < 10:
         toast.warning(
           `You are still low but doing a bit better - The number is now ${number}`
         );
         break;
-      case number < 16:
+      case number < 15:
         toast.info(`You are now doing okay - The number is now ${number}`);
         break;
       case number > 20:
