@@ -34,10 +34,6 @@ function App() {
     }
   };
 
-  const resetNumber = () => {
-    setNumber(0);
-  };
-
   return (
     <div>
       <ToastContainer position="bottom-right" className="testContainer" />
@@ -57,7 +53,7 @@ function App() {
         <button className="b3" onClick={notify}>
           Test Number
         </button>
-        <button className="b4" onClick={resetNumber}>
+        <button className="b4" onClick={() => setNumber(0)}>
           Reset the Number
         </button>
         <button className="b5">{number}</button>
