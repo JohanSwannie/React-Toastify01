@@ -3,3 +3,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.middle .b1,
+.middle .b2,
+.middle .b3,
+.middle .b4 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle .b1 {
+  top: 20%;
+}
+
+.middle .b2 {
+  top: 35%;
+}
+
+.middle .b3 {
+  top: 50%;
+}
+
+.middle .b4 {
+  top: 65%;
+}
+
+.middle .b1,
+.middle .b2,
+.middle .b3,
+.middle .b4 {
+  font-size: 1.5rem;
+  width: 16vw;
+  height: 10vh;
+  color: red;
+  text-align: center;
+  line-height: 3;
+}
