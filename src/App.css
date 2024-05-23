@@ -4,37 +4,47 @@
   box-sizing: border-box;
 }
 
+.testContainer {
+  width: 50vw;
+}
+
 .middle .b1,
 .middle .b2,
 .middle .b3,
-.middle .b4 {
+.middle .b4,
+.middle .b5 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .middle .b1 {
-  top: 20%;
+  top: 10%;
 }
 
 .middle .b2 {
-  top: 35%;
+  top: 25%;
 }
 
 .middle .b3 {
-  top: 50%;
+  top: 40%;
 }
 
 .middle .b4 {
-  top: 65%;
+  top: 55%;
+}
+
+.middle .b5 {
+  top: 70%;
 }
 
 .middle .b1,
 .middle .b2,
 .middle .b3,
-.middle .b4 {
+.middle .b4,
+.middle .b5 {
   font-size: 1.5rem;
-  width: 16vw;
+  width: 20vw;
   height: 10vh;
   color: red;
   text-align: center;
